@@ -156,6 +156,11 @@ section::after{
     border: 2px solid #fff;
     box-sizing: border-box;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .content .color span:hover{
+    border: 0;
 }
 
 .container .card .content .color span:nth-child(2){
