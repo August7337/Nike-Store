@@ -10,13 +10,24 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(pattern.png);
-    overflow: hidden;
+    background: url(pattern.png) center;
+    /*overflow: hidden;*/
     padding: 100px 20px;
     box-sizing: border-box;
-    background-size: contain;
+    background-size: 100vh;
     background-attachment: fixed;
+
+    animation-name: backAnim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.35, 0.03, 0.67, 0.99);
 }
+
+@keyframes backAnim {
+    50%{background-size: 105vh;}
+    100%{background-size: 100vh ;}
+}
+
 
 
 section::before{
