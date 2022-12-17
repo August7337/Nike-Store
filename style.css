@@ -58,7 +58,7 @@ section::after{
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 .container .card .imgBx{
@@ -144,7 +144,15 @@ section::after{
 }
 
 .container .card .content .size span:hover{
+    background: #03a9f4;
+}
+
+.container .card:nth-child(2) .content .size span:hover{
     background: #9bdc28;
+}
+
+.container .card:nth-child(3) .content .size span:hover{
+    background: #e91e63;
 }
 
 .container .card .content .color span{
@@ -164,11 +172,11 @@ section::after{
 }
 
 .container .card .content .color span:nth-child(2){
-    background: #9bdc28;
+    background: #03a9f4;
 }
 
 .container .card .content .color span:nth-child(3){
-    background: #03a9f4;
+    background: #9bdc28;
 }
 
 .container .card .content .color span:nth-child(4){
@@ -191,5 +199,13 @@ section::after{
 }
 
 .container .card .content a:hover{
+    background: #03a9f4;
+}
+
+.container .card:nth-child(2) .content a:hover{
     background: #9bdc28;
+}
+
+.container .card:nth-child(3) .content a:hover{
+    background: #e91e63;
 }
