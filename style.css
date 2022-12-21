@@ -2,18 +2,11 @@
 padding: 0;
 box-sizing: border-box;
 font-family: sans-serif;
+text-decoration: none;
 }
 
-section{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url(pattern.png) center;
-    /*overflow: hidden;*/
-    padding: 100px 20px;
-    box-sizing: border-box;
+body{
+    background: url(img/pattern.png) center;
     background-size: 100vh;
     background-attachment: fixed;
 
@@ -26,6 +19,82 @@ section{
 @keyframes backAnim {
     50%{background-size: 105vh;}
     100%{background-size: 100vh ;}
+}
+
+h1 .logo{
+    font-size: 5px;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.header{
+    position: relative;
+    transition: all 0.7s;
+    z-index: 9;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 0 0 20px 20px;
+    height: 10vh;
+    
+}
+
+.header .wrap{
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    padding: 16px 0;
+}
+
+.header .logo a{
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.header .menu ul{
+    display: flex;
+}
+
+.header .menu a{
+    font-size: 1.5rem;
+    
+    color: rgba(255, 255, 255, 0.5);
+    padding: 16px 8px;
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+
+.header a:hover{
+    color:  white;
+}
+
+
+section{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+    /*overflow: hidden;*/
+    padding: 100px 20px;
+    box-sizing: border-box;
 }
 
 section::before{
